@@ -7,7 +7,15 @@
     <title>Document</title>
 </head>
 <body class="text-gray-500 font-body">
-    <script src="script.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            const myButton = document.getElementById('burger');
+
+            myButton.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        })
+    </script>
     <div class="grid md:grid-cols-3"><!-- wrapper -->
         <div class="md:col-span-1 md:flex md:justify-end">
             <nav class="text-right">
